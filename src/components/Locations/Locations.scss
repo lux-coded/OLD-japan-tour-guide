@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+#locations__section {
+  color: black;
+  padding: 5% 10%;
+  text-align: center;
+  background-color: $background-white;
+
+  .locations__card {
+    background-color: $background-dim;
+    margin: 2rem 0;
+    padding: 2rem;
+    display: flex;
+    height: 600px;
+
+    img {
+      width: 50%;
+      height: 100%;
+      // overflow: hidden;
+    }
+
+    .locations__details {
+      font-size: 1.25rem;
+      p {
+        padding: 4rem 2rem;
+      }
+    }
+  }
+
+
+}

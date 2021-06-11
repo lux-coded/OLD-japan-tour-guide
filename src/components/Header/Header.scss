@@ -17,6 +17,21 @@
     h1 {
       font-size: 10rem;
     }
+    button {
+      color: $main-text-color;
+      background-color: $main-color-light;
+      border: none;
+      border-radius: 5rem;
+      padding: 1rem 2rem;
+      margin: 2rem 1rem;
+      font-size: 1.75rem;
+      transition: $main-transition;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $main-color-hover;
+      }
+    }
   }
 }
 
@@ -37,9 +52,14 @@
     background-image: linear-gradient(160deg, rgba(12, 34, 33, 0.8) 49.9%, rgba(38, 108, 85, 0.11) 50%), url('../../assets/images/garden3.jpg');
     .header__title {
       left: 5%;
-      top: 15%;
+      top: 10%;
       h1 {
         font-size: 6rem;
+      }
+      button {
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        font-size: 1.5rem;
       }
     }
   }
@@ -49,9 +69,14 @@
   #header {
     .header__title {
       left: 5%;
-      top: 15%;
+      top: 10%;
       h1 {
         font-size: 4rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        font-size: 1.25rem;
       }
     }
   }

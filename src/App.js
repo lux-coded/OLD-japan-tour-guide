@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Food from './components/Food/Food';
+import Locations from './components/Locations/Locations';
 
 
 const App = (props) => {
@@ -8,6 +9,7 @@ const App = (props) => {
     <div>
       <Header />
       <Food />
+      <Locations />
     </div>
   );
 }

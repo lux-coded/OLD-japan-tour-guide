@@ -1,23 +1,39 @@
 #food__section {
-  height: 100vh;
-  background-image: linear-gradient(240deg, rgba(12, 34, 33, 0.8) 59.9%, rgba(38, 108, 85, 0.11) 60%), url('../../assets/images/food2.jpg');
+  color: black;
+  height: auto;
+  padding: 5% 15%;
+  background: rgba(250, 250, 250, 1);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   width: 100%;
   position: relative;
+  text-align: center;
 
-  h1 {
-    position: absolute;
-    font-size: 6rem;
-    right: 10%;
-    top: 15%;
+  .food__showcase__container {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+
+    .food__card {
+      height: 500px;
+      position: relative;
+      h2 {
+        color: white;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        font-size: 4rem;
+      }
+    }
   }
+
 }
 
 @media screen and (max-width: 1000px) {
   #food__section {
-    background-image: linear-gradient(190deg, rgba(12, 34, 33, 0.8) 34.9%, rgba(38, 108, 85, 0.11) 35%), url('../../assets/images/food2.jpg');
     h1 {
       position: absolute;
       font-size: 6rem;

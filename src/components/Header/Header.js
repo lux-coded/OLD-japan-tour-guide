@@ -17,7 +17,13 @@ const Header = (props) => {
       <div className='header__title'>
         <h1>Japan</h1>
         <h1 style={{ color: 'rgb(220, 47, 47)' }}>日本</h1>
+        <a href='#food__section' >
+          <button>
+            Explore
+          </button>
+        </a>
       </div>
+
     </header>
   );
 }
