@@ -48,8 +48,6 @@
     .locations__card {
       margin: 2rem 0;
       padding: 2rem;
-      display: block;
-      height: auto;
     }
   }
 }
@@ -62,8 +60,10 @@
     .locations__card {
       margin: 2rem 0;
       padding: 0.5rem;
-      display: block;
-      height: auto;
+      h1 {
+        font-size: 3rem;
+        bottom: 5%;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@ import osaka from '../../assets/images/osaka-min.jpg';
 const Locations = () => {
   const locationImageText = (image) => {
     return {
-      backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.1) 92%), url('${image}')`,
+      backgroundImage: `linear-gradient(45deg, rgba(12, 34, 33, 0.9) 24.9%, rgba(38, 108, 85, 0.11) 25%), url('${image}')`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       backgroundPosition: 'center'

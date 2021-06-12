@@ -2,13 +2,14 @@ import React from 'react';
 import './Food.scss';
 
 import ramen from '../../assets/images/ramen2.jpg';
-import food2 from '../../assets/images/food2.jpg';
 import food3 from '../../assets/images/food3.jpg';
+import onigiri from '../../assets/images/onigiri.jpg';
+import tempura from '../../assets/images/tempura.jpg';
 
 const Food = (props) => {
   const foodImageText = (image) => {
     return {
-      backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.1) 92%), url('${image}')`,
+      backgroundImage: `linear-gradient(30deg, rgba(12, 34, 33, 0.8) 29.9%, rgba(38, 108, 85, 0.11) 30%), url('${image}')`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       backgroundPosition: 'center'
@@ -23,11 +24,14 @@ const Food = (props) => {
           <h2>Ramen</h2>
           <ion-icon name="fast-food"></ion-icon>
         </article>
-        <article style={foodImageText(food2)} className='food__card'>
+        <article style={foodImageText(food3)} className='food__card'>
           <h2>Sushi</h2>
         </article>
-        <article style={foodImageText(food3)} className='food__card'>
-          <h2>idfk</h2>
+        <article style={foodImageText(onigiri)} className='food__card'>
+          <h2>Onigiri</h2>
+        </article>
+        <article style={foodImageText(tempura)} className='food__card'>
+          <h2>Tempura</h2>
         </article>
       </div>
     </div>

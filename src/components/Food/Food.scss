@@ -27,7 +27,7 @@
       h2 {
         color: white;
         position: absolute;
-        bottom: 10%;
+        bottom: 5%;
         left: 5%;
         font-size: 4rem;
       }
@@ -52,6 +52,13 @@
       margin-top: 4rem;
       padding: 1rem 0;
       grid-template-columns: 1fr;
+      .food__card {
+        height: 500px;
+        position: relative;
+        h2 {
+          font-size: 3rem;
+        }
+      }
     }
   }
 }
