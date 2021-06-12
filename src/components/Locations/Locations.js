@@ -6,35 +6,35 @@ import kyoto from '../../assets/images/kyoto-min.jpg';
 import osaka from '../../assets/images/osaka-min.jpg';
 
 const Locations = () => {
+  const locationImageText = (image) => {
+    return {
+      backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.1) 92%), url('${image}')`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }
+  }
+
   return (
     <div id='locations__section'>
-      <h1 style={{ fontSize: '6rem', marginBottom: '4rem' }}>Locations</h1>
-      <article className='locations__card'>
+      <h1 className='section__title' style={{ marginBottom: '4rem' }}>Locations</h1>
+      <article style={locationImageText(tokyo)} className='locations__card'>
         <div className='locations__details'>
-          <h1 style={{ fontSize: '4rem' }}>Tokyo</h1>
-          <p style={{ textAlign: 'right' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit nulla vel tincidunt pretium. Nunc porta sem ligula, eu cursus mauris ultricies ut. Sed eget ligula quis dolor tempor facilisis. Cras non neque vitae lorem ultricies sodales sed a urna. Ut id erat sapien. Etiam id condimentum mauris, vitae pretium dui. Ut porttitor tellus ipsum, ac cursus libero blandit eget. Nunc varius augue ullamcorper mauris consequat, ac pretium leo posuere. In quis nibh ligula. Nunc vitae urna non elit facilisis euismod. Donec imperdiet, diam eu tempus pretium, nisi nunc imperdiet orci, id varius turpis justo volutpat ex. Nulla pellentesque ligula ut turpis mollis sollicitudin ac vitae elit.
-          </p>
+          <h1>Tokyo</h1>
         </div>
-        <img src={tokyo}></img>
+        {/* <img alt='location' src={tokyo}></img> */}
       </article>
-      <article className='locations__card'>
-        <img src={kyoto}></img>
+      <article style={locationImageText(kyoto)} className='locations__card'>
         <div className='locations__details'>
-          <h1 style={{ fontSize: '4rem' }}>Kyoto</h1>
-          <p style={{ textAlign: 'left' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit nulla vel tincidunt pretium. Nunc porta sem ligula, eu cursus mauris ultricies ut. Sed eget ligula quis dolor tempor facilisis. Cras non neque vitae lorem ultricies sodales sed a urna. Ut id erat sapien. Etiam id condimentum mauris, vitae pretium dui. Ut porttitor tellus ipsum, ac cursus libero blandit eget. Nunc varius augue ullamcorper mauris consequat, ac pretium leo posuere. In quis nibh ligula. Nunc vitae urna non elit facilisis euismod. Donec imperdiet, diam eu tempus pretium, nisi nunc imperdiet orci, id varius turpis justo volutpat ex. Nulla pellentesque ligula ut turpis mollis sollicitudin ac vitae elit.
-          </p>
+          <h1>Kyoto</h1>
         </div>
+        {/* <img alt='location' src={kyoto}></img> */}
       </article>
-      <article className='locations__card'>
+      <article style={locationImageText(osaka)} className='locations__card'>
         <div className='locations__details'>
-          <h1 style={{ fontSize: '4rem' }}>Osaka</h1>
-          <p style={{ textAlign: 'right' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit nulla vel tincidunt pretium. Nunc porta sem ligula, eu cursus mauris ultricies ut. Sed eget ligula quis dolor tempor facilisis. Cras non neque vitae lorem ultricies sodales sed a urna. Ut id erat sapien. Etiam id condimentum mauris, vitae pretium dui. Ut porttitor tellus ipsum, ac cursus libero blandit eget. Nunc varius augue ullamcorper mauris consequat, ac pretium leo posuere. In quis nibh ligula. Nunc vitae urna non elit facilisis euismod. Donec imperdiet, diam eu tempus pretium, nisi nunc imperdiet orci, id varius turpis justo volutpat ex. Nulla pellentesque ligula ut turpis mollis sollicitudin ac vitae elit.
-          </p>
+          <h1>Osaka</h1>
         </div>
-        <img src={osaka}></img>
+        {/* <img alt='location' src={osaka}></img> */}
       </article>
     </div>
   );

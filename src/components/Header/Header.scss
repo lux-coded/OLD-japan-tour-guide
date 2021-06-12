@@ -7,7 +7,7 @@
   background-image: linear-gradient(120deg, rgba(12, 34, 33, 0.8) 39.9%, rgba(38, 108, 85, 0.11) 40%), url('../../assets/images/garden3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0% 65%;
   width: 100%;
 
   .header__title {
@@ -50,6 +50,7 @@
 @media screen and (max-width: 1000px) {
   #header {
     background-image: linear-gradient(160deg, rgba(12, 34, 33, 0.8) 49.9%, rgba(38, 108, 85, 0.11) 50%), url('../../assets/images/garden3.jpg');
+    background-position: center;
     .header__title {
       left: 5%;
       top: 10%;

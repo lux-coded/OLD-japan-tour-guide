@@ -6,16 +6,28 @@
   text-align: center;
   background-color: $background-white;
 
+  .section__title {
+    font-size: 6rem;
+  }
+
   .locations__card {
     background-color: $background-dim;
     margin: 2rem 0;
     padding: 2rem;
-    display: flex;
     height: 600px;
+    position: relative;
+
+    h1 {
+      position: absolute;
+      font-size: 4rem;
+      color: white;
+      bottom: 10%;
+      left: 5%;
+    }
 
     img {
-      width: 50%;
-      height: 100%;
+      width: 60%;
+      // height: 100%;
       // overflow: hidden;
     }
 
@@ -26,6 +38,32 @@
       }
     }
   }
+}
 
+@media screen and (max-width: 1500px) {
+  #locations__section {
+    .section__title {
+      font-size: 4rem;
+    }
+    .locations__card {
+      margin: 2rem 0;
+      padding: 2rem;
+      display: block;
+      height: auto;
+    }
+  }
+}
 
+@media screen and (max-width: 750px) {
+  #locations__section {
+    .section__title {
+      font-size: 2rem;
+    }
+    .locations__card {
+      margin: 2rem 0;
+      padding: 0.5rem;
+      display: block;
+      height: auto;
+    }
+  }
 }

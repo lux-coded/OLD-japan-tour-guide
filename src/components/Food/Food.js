@@ -21,6 +21,7 @@ const Food = (props) => {
       <div className='food__showcase__container'>
         <article style={foodImageText(ramen)} className='food__card'>
           <h2>Ramen</h2>
+          <ion-icon name="fast-food"></ion-icon>
         </article>
         <article style={foodImageText(food2)} className='food__card'>
           <h2>Sushi</h2>
